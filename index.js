@@ -33,9 +33,9 @@ const errorHandler = (error, request, response, next) => {
 }
 app.use(errorHandler)
 
-app.get('/', (req, res) => {
-  res.send('<h3>Random for the / path</h3>')
-})
+// app.get('/', (req, res) => {
+//   res.send('<h3>Random for the / path</h3>')
+// })
 
 app.get('/api/persons', (req, res) => {
     Person.find({}).then(person => {
