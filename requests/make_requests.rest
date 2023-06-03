@@ -1,0 +1,16 @@
+GET http://localhost:3001/api/persons
+
+###
+DELETE http://localhost:3001/api/persons/647a754b5d7d09d5aa3ee957
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Deep",
+    "number": "616"
+}
+
+###
+GET http://localhost:3001/api/persons/647948b97324914d3e2ef74e
